@@ -71,7 +71,7 @@ python sentiment_classification_hf.py -f input.txt --print
 
 1. Eseguire una Sintesi del Testo Fornito tramite Riga di Comando:
 
-python summarization_hf.py summarization -t "Inserire testo da riassumere." --print
+python summarization_hf.py -t "Inserire testo da riassumere." --print
 
 2. Eseguire una Sintesi del Testo Presente in un File:
 
@@ -79,11 +79,8 @@ python summarization_hf.py -f long_article.txt --print
 
 3. Salvare la Sintesi del Testo in un File di Output:
 
-python summarization_hf.py summarization -t "Inserire testo da riassumere." -o summary.txt
+python summarization_hf.py -t "Inserire testo da riassumere." -o summary.txt
 
 4. Sintesi di un File di Testo e Salvataggio del Risultato:
-python summarization_hf.py summarization -f report.txt -o summarized_report.txt
 
-
-
-
+python summarization_hf.py -f report.txt -o summarized_report.txt
