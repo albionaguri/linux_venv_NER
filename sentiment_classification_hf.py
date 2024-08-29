@@ -38,7 +38,7 @@ def perform_analysis(text, threshold=None):
     ## Sentiment analysis pipeline
     nlp = pipeline('sentiment-analysis', tokenizer=tokenizer, model=model)
 
-    results = nlp[(text)]
+    results = nlp(text)
 
     if threshold is not None:
         results = [r for r in results if r["score"] >= threshold]
